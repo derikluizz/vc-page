@@ -45,7 +45,8 @@ Arquivos originais do cliente ficam salvos em `imagens/` com os nomes:
 
 A partir deles foram gerados os recortes usados no site (ícone + "VALOR",
 sem o subtítulo "CONTADORES", que fica ilegível em tamanho de menu):
-- `logo-valor-contadores-header.png` — versão preta, usada no header (fundo claro)
+- `logo-valor-contadores-header.png` — versão preta (não usada mais no header, mantida como base)
+- `logo-valor-contadores-header-azul.png` — mesma versão recolorida para o azul de destaque (`#2f74d8`, via ColorMatrix preservando o alpha) — **é a usada no header** (2026-07-24, pedido do cliente)
 - `logo-valor-contadores-footer.png` — versão branca, usada no footer (fundo navy)
 - `favicon.png` — só o ícone (o "V"/check), recortado e centralizado em fundo navy arredondado
 
