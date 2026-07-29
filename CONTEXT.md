@@ -8,7 +8,48 @@ componentes HTML/CSS/JS), com paleta recolorida para azul e branco e conteúdo
 voltado a transmitir credibilidade para um escritório de contabilidade.
 
 **Status:** logo oficial e dados reais de contato já recebidos do cliente
-(2026-07-24) e aplicados ao site.
+(2026-07-24) e aplicados ao site. Publicado em
+[github.com/derikluizz/vc-page](https://github.com/derikluizz/vc-page) via
+GitHub Pages, com domínio próprio `valorcontadores.com.br` sendo configurado.
+
+## Publicação / Domínio próprio (2026-07-24)
+
+- **Repositório:** github.com/derikluizz/vc-page
+- **GitHub Pages:** ativado (branch `main`, root)
+- **Domínio próprio:** `valorcontadores.com.br` — arquivo `CNAME` na raiz do
+  repo já configurado com esse valor. Todos os `<link rel="canonical">` e
+  `og:url` do site já apontavam pra esse domínio desde o início.
+
+**Passo que só o cliente pode fazer** (acesso ao painel do registrador do
+domínio, ex: Registro.br): configurar o DNS apontando pro GitHub Pages.
+
+Para domínio raiz (`valorcontadores.com.br`, sem `www`) — criar 4 registros **A**:
+```
+185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153
+```
+(Opcional, IPv6) 4 registros **AAAA**:
+```
+2606:50c0:8000::153
+2606:50c0:8001::153
+2606:50c0:8002::153
+2606:50c0:8003::153
+```
+
+Para `www.valorcontadores.com.br` (se quiserem que funcione também) — 1 registro **CNAME**:
+```
+www → derikluizz.github.io.
+```
+
+Depois de configurar o DNS (propagação pode levar de minutos a ~24h):
+1. Ir em github.com/derikluizz/vc-page/settings/pages
+2. Em "Custom domain", confirmar que está `valorcontadores.com.br` (o arquivo
+   CNAME já deixa isso pré-preenchido) e clicar em "Save" — o GitHub valida o
+   DNS automaticamente
+3. Marcar "Enforce HTTPS" assim que a opção ficar disponível (só aparece
+   depois que o GitHub emite o certificado, alguns minutos após a validação)
 
 ## Dados reais da empresa (2026-07-24)
 
