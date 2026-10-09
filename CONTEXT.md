@@ -16,9 +16,11 @@ GitHub Pages, com domínio próprio `valorcontadores.com.br` sendo configurado.
 
 - **Repositório:** github.com/derikluizz/vc-page
 - **GitHub Pages:** ativado (branch `main`, root)
-- **Domínio próprio:** `valorcontadores.com.br` — arquivo `CNAME` na raiz do
-  repo já configurado com esse valor. Todos os `<link rel="canonical">` e
-  `og:url` do site já apontavam pra esse domínio desde o início.
+- **Domínio próprio:** `www.valorcontadores.com.br` é o domínio principal (arquivo
+  `CNAME` na raiz, alterado pelo cliente nas configurações do Pages em 2026-10).
+  O domínio sem www (`valorcontadores.com.br`) redireciona para ele. Atenção:
+  os `<link rel="canonical">` e `og:url` do site ainda apontam pro domínio sem
+  www — vale alinhar se quiserem consistência de SEO.
 
 **Passo que só o cliente pode fazer** (acesso ao painel do registrador do
 domínio, ex: Registro.br): configurar o DNS apontando pro GitHub Pages.
